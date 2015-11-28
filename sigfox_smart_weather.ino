@@ -21,6 +21,7 @@ void setup() {
   if (DEBUG) {
     SerialUSB.begin(115200);
   }
+  Wire.begin(); //before sensors begin
   smeHumidity.begin();
   smePressure.begin();
   
